@@ -7,48 +7,14 @@ import { Button } from "@/components/ui/button"
 import { FadeIn } from '@/components/fade-in'
 import { CountUp } from '@/components/count-up'
 import { Reviews } from '@/components/reviews'
+import image1 from './assets/imagebg.jpg'
+
+
 
 export default function Home() {
   return (
     <div>
-      {/* Hero Section */}
-      {/* <section className="bg-white py-20">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-          <FadeIn direction="right">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Great futures are built with proper guidance
-            </h1>
-            <p className="text-xl text-gray-600 mb-8">
-            The world's largest social fundraising platform dedicated to youth training and employment
-            </p>
-            <div className="space-x-4">
-              <Button 
-                className="bg-green-600 hover:bg-green-700 transition-transform hover:scale-105"
-              >
-                Explore Programs
-              </Button>
-              <Button 
-                variant="outline"
-                className="transition-transform hover:scale-105"
-              >
-                Partner With Us
-              </Button>
-            </div>
-          </FadeIn>
-          <FadeIn direction="left" delay={0.2}>
-            <div className="relative h-[400px]">
-              <Image
-                src="/placeholder.svg"
-                alt="Training session"
-                fill
-                className="rounded-lg object-cover"
-              />
-            </div>
-          </FadeIn>
-        </div>
-      </section> */}
-
-<section className="w-full py-12 md:py-24 lg:py-32">
+ {/* <section className=" w-full py-12 md:py-24 lg:py-32">
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-12 ">
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
@@ -82,7 +48,56 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section>  */}
+
+        <section className="relative w-full py-12 md:py-24 lg:py-32 overflow-hidden">
+      <Image
+        src={image1}
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className="absolute inset-0 z-0"
+      />
+      <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+      <div className="container relative z-20 mx-auto px-4">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-white">
+            Great futures are built with proper guidance
+          </h1>
+          <p className="text-xl text-gray-200 mb-8">
+            The world's largest social fundraising platform dedicated to youth training and employment
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+              Start Learning
+            </button>
+            <button className="border border-white hover:bg-white hover:text-gray-900 text-white px-6 py-2 rounded-md transition-colors duration-300">
+              Become a Partner
+            </button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-6">
+            <div className="text-3xl font-bold text-green-400 mb-2">65%</div>
+            <p className="text-gray-200">of our graduates find employment within 3 months</p>
+          </div>
+          <div className="bg-gray-900 bg-opacity-80 text-white rounded-2xl p-6">
+            <div className="text-3xl font-bold mb-2">2,500+</div>
+            <p>Students trained annually across multiple programs</p>
+          </div>
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-6">
+            <div className="text-3xl font-bold text-green-400 mb-2">50+</div>
+            <p className="text-gray-200">Partner companies offering internships</p>
+          </div>
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-6">
+            <div className="text-3xl font-bold text-white mb-2">6 Months</div>
+            <p className="text-gray-200">Intensive training and internship program</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
       {/* Partners Section */}
       <section className="py-16 bg-gray-50">
