@@ -8,6 +8,12 @@ import { FadeIn } from '@/components/fade-in'
 import { CountUp } from '@/components/count-up'
 import { Reviews } from '@/components/reviews'
 import image1 from './assets/imagebg.jpg'
+import partner1 from './assets/1622799749-84-calebella-integritas-projects-ltd.png'
+import partner2 from './assets/blackdiamond.jpg'
+import partner3 from './assets/el fad.jpeg'
+import partner4 from './assets/mbs.png'
+import partner5 from './assets/mw.png'
+
 
 
 
@@ -105,24 +111,88 @@ export default function Home() {
           <FadeIn>
             <h2 className="text-3xl font-bold text-center mb-12">Our Partners</h2>
           </FadeIn>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((i) => (
-              <FadeIn key={i} delay={i * 0.1}>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+            {/* {[1, 2, 3, 4].map((i) => ( */}
+              <FadeIn>
                 <motion.div 
                   className="flex items-center justify-center"
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <Image
-                    src="/placeholder.svg"
-                    alt={`Partner ${i}`}
+                    src={partner1}
+                    alt={"Partner"}
                     width={150}
                     height={60}
                     className="grayscale hover:grayscale-0 transition-all duration-300"
                   />
                 </motion.div>
               </FadeIn>
-            ))}
+
+              <FadeIn>
+                <motion.div 
+                  className="flex items-center justify-center"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <Image
+                    src={partner2}
+                    alt={"Partner"}
+                    width={150}
+                    height={60}
+                    className="grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </motion.div>
+              </FadeIn>
+
+              <FadeIn>
+                <motion.div 
+                  className="flex items-center justify-center"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <Image
+                    src={partner3}
+                    alt={"Partner"}
+                    width={100}
+                    height={60}
+                    className="grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </motion.div>
+              </FadeIn>
+
+              <FadeIn>
+                <motion.div 
+                  className="flex items-center justify-center"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <Image
+                    src={partner4}
+                    alt={"Partner"}
+                    width={100}
+                    height={60}
+                    className="grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </motion.div>
+              </FadeIn>
+
+              <FadeIn>
+                <motion.div 
+                  className="flex items-center justify-center"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <Image
+                    src={partner5}
+                    alt={"Partner"}
+                    width={100}
+                    height={60}
+                    className="grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </motion.div>
+              </FadeIn>
+            {/* ))} */}
           </div>
         </div>
       </section>
@@ -133,19 +203,19 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-green-600 mb-2">
-                <CountUp end={150} suffix="K+" />
+                <CountUp end={300} suffix="+" />
               </div>
               <div className="text-gray-600">Graduates Trained</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-green-600 mb-2">
-                <CountUp end={180} suffix="K" />
+                <CountUp end={500} suffix="+" />
               </div>
               <div className="text-gray-600">Success Stories</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-green-600 mb-2">
-                <CountUp end={90} suffix="K" />
+                <CountUp end={14} suffix="+" />
               </div>
               <div className="text-gray-600">Partner Companies</div>
             </div>
@@ -174,12 +244,12 @@ export default function Home() {
               },
               {
                 title: "Soft Skills Development",
-                description: "Essential workplace and communication skills",
+                description: "Essential workplace skills and communication skills",
                 image: "/placeholder.svg"
               },
               {
                 title: "Internship Placement",
-                description: "6-month internships with partner companies",
+                description: "6-month internships placement with partner companies",
                 image: "/placeholder.svg"
               }
             ].map((program, i) => (

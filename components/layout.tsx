@@ -137,8 +137,9 @@ function LayoutContent({ children }: { children: React.ReactNode }) {
             <ul className="space-y-2 text-gray-600">
               <li>3rd Floor Oshopey Plaza, Allen Avenue, Ikeja, Lagos</li>
               {/* <li></li> */}
-              <li>contact@era.org</li>
-              <li>+1 234 567 890</li>
+              <li>engineeringresourcesacademy@gmail.com</li>
+              <li>08139777878</li>
+              <li>+234 811 386 1126</li>
             </ul>
           </div>
           <div>
