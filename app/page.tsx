@@ -13,6 +13,10 @@ import partner2 from './assets/blackdiamond.jpg'
 import partner3 from './assets/el fad.jpeg'
 import partner4 from './assets/mbs.png'
 import partner5 from './assets/mw.png'
+import technicalTraining from './assets/medium-shot-smiley-man-with-tablet.jpg'
+import softSkills from './assets/daily-life-business-people-office.jpg'
+import internship from './assets/engineer-workspace-desk-background-top-view.jpg'
+
 
 
 
@@ -230,7 +234,7 @@ export default function Home() {
       </section>
 
       {/* Featured Programs */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <FadeIn>
             <h2 className="text-3xl font-bold text-center mb-12">Our Programs</h2>
@@ -240,7 +244,7 @@ export default function Home() {
               {
                 title: "Technical Training",
                 description: "Intensive technical training in various domains",
-                image: "/placeholder.svg"
+                image:  "/placeholder.svg"
               },
               {
                 title: "Soft Skills Development",
@@ -260,7 +264,7 @@ export default function Home() {
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
                   <Image
-                    src={program.image}
+                    src={`{program.image}`}
                     alt={program.title}
                     width={400}
                     height={250}
@@ -281,7 +285,61 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* Featured Programs */}
+<section className="py-16 bg-gray-50">
+  <div className="container mx-auto px-4">
+    <FadeIn>
+      <h2 className="text-3xl font-bold text-center mb-12">Our Programs</h2>
+    </FadeIn>
+    <div className="grid md:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Technical Training",
+          description: "Intensive technical training in various domains",
+          image: technicalTraining
+        },
+        {
+          title: "Soft Skills Development",
+          description: "Essential workplace skills and communication skills",
+          image: softSkills
+        },
+        {
+          title: "Internship Placement",
+          description: "6-month internships placement with partner companies",
+          image: internship
+        }
+      ].map((program, i) => (
+        <FadeIn key={i} direction="up" delay={i * 0.2}>
+          <motion.div 
+            className="bg-white rounded-lg overflow-hidden shadow-lg"
+            whileHover={{ y: -10 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            <Image
+              src={program.image}
+              alt={program.title}
+              width={400}
+              height={250}
+              className="w-full object-cover h-48"
+            />
+            <div className="p-6">
+              <h3 className="font-bold text-xl mb-2">{program.title}</h3>
+              <p className="text-gray-600 mb-4">{program.description}</p>
+              <Button 
+                variant="outline" 
+                className="w-full transition-colors hover:bg-green-600 hover:text-white"
+              >
+                Learn More
+              </Button>
+            </div>
+          </motion.div>
+        </FadeIn>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Reviews Section */}
       <Reviews />
