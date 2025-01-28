@@ -11,31 +11,42 @@ import {
 
 import groupimage from "../assets/groupimage.jpg"
 import omolola from "../assets/omolola.jpg"
+import tofunmi from "../assets/IMG_0812.jpeg"
+import placeholder from "../assets/user.png" 
+
+
+
 export default function About() {
   const team = [
     {
-      name: "Engr. Omolola Adetona"
+      name: "Engr. Omolola Adetona",
       role: "Executive Director",
-      image: ",
-      bio: "With over 15 years of experience in education and workforce development."
+      image: omolola,
+      bio: "With over 10 years of experience in engineering."
     },
     {
-      name: "Michael Chen",
+      name: "Taiwo Omotosho",
       role: "Training Director",
-      image: "/placeholder.svg",
+      image: placeholder,
       bio: "Expert in curriculum development and professional training programs."
     },
     {
-      name: "Lisa Rodriguez",
-      role: "Partnership Manager",
-      image: "/placeholder.svg",
-      bio: "Builds and maintains relationships with our corporate partners."
+      name: "Seyi Adigun",
+      role: "Accountant",
+      image: placeholder,
+      bio: ""
     },
     {
-      name: "David Kim",
-      role: "Career Development Lead",
-      image: "/placeholder.svg",
-      bio: "Specializes in career guidance and professional development."
+      name: "Adebayo Tofunmi",
+      role: "Admin Manager",
+      image: tofunmi,
+      bio: "."
+    },
+    {
+      name: "Adebayo Bariks",
+      role: "Admin Manager",
+      image: placeholder,
+      bio: ""
     }
   ]
 
@@ -94,7 +105,7 @@ export default function About() {
             </div>
             <div className="relative h-[400px]">
               <Image
-                src=
+                src= {groupimage}
                 alt="Training session"
                 fill
                 className="rounded-lg object-cover"
