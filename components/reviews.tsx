@@ -15,7 +15,7 @@ interface Review {
   name: string
   role: string
   company: string
-  image: string
+  image: string|| any
   content: string
   rating: number
 }
