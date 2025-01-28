@@ -5,6 +5,11 @@ import { Star } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { FadeIn } from './fade-in'
 
+import userImage from '../app/assets/user.png'
+import dayo from '../app/assets/Screenshot_20250128_134544_Samsung Notes.jpg'
+import hamzah from '../app/assets/Screenshot_20250128_134346_Samsung Notes.jpg'
+import tofunmi from '../app/assets/IMG_0812.jpeg'
+
 interface Review {
   id: number
   name: string
@@ -18,47 +23,47 @@ interface Review {
 const reviews: Review[] = [
   {
     id: 1,
-    name: "Sarah Chen",
-    role: "Software Developer",
-    company: "TechCorp",
-    image: "/placeholder.svg",
-    content: "The training program at ERA was transformative. The practical skills and industry connections I gained were invaluable to starting my career.",
+    name: "Engr. Mobolaji Peter",
+    role: "Civil Engineer",
+    company: "Castigliano Nigeria Limited",
+    image: userImage,
+    content: "I have learnt so much from the opportunity given to me by ERA. To mention but few, I was able to do several setting out, interpreting structural details, calculation of concrete volume and formwork etc. We also constructed 8 blocks of flats from foundation to first floor",
     rating: 5
   },
   {
     id: 2,
-    name: "Michael Rodriguez",
-    role: "Marketing Specialist",
-    company: "BrandCo",
-    image: "/placeholder.svg",
+    name: "Adebayo Tofunmi",
+    role: "Civil Engineering Intern",
+    company: "LS",
+    image: tofunmi,
     content: "ERA's program provided me with real-world experience and mentorship that helped me land my dream job. The support from the team was exceptional.",
     rating: 5
   },
   {
     id: 3,
-    name: "Emily Thompson",
-    role: "Data Analyst",
-    company: "DataTech",
-    image: "/placeholder.svg",
-    content: "The internship placement through ERA opened doors I never thought possible. The skills I learned during the program are still valuable in my career today.",
+    name: "Hamzah Sirajudeen Olamilekan",
+    role: "Engineer",
+    company: "BLACK DIAMOND ENGINEERING LIMITED",
+    image: hamzah,
+    content: "Era helped me with the Interpretation of structural and architectural drawing -Project management ranging from areas of Human down to resources management. -Calculation of concrete volume -Estimation of materials to be used for an activity and many more.",
     rating: 5
   },
   {
     id: 4,
-    name: "David Kim",
-    role: "UX Designer",
-    company: "DesignHub",
-    image: "/placeholder.svg",
-    content: "What sets ERA apart is their commitment to both technical and soft skills development. The program prepared me well for the professional world.",
+    name: " Wright Dayo",
+    role: "Engineer",
+    company: "BLACK DIAMOND ENGINEERING LIMITED",
+    image: dayo,
+    content: "Durning my internship i learnt about a lot of things including Post tension slabs, slab detailing for post tension cables, time management, effective communication with team",
     rating: 5
   },
   {
     id: 5,
-    name: "Lisa Patel",
-    role: "Business Analyst",
-    company: "ConsultCo",
-    image: "/placeholder.svg",
-    content: "The networking opportunities and industry connections I made through ERA were incredible. It's more than just training - it's a career launchpad.",
+    name: "Dosumw Owolabi Abdul-Lateef",
+    role: "Engineer",
+    company: "CALEBELLA PROJECT INTEGRITAS",
+    image: userImage,
+    content: "I have learnt a lot from the opportunity given to me by ERA. To mention but few, I was able to do several setting out, interpreting structural details, calculation of concrete volume and formwork, usage of leveling instrument, site management e.t.c. We constructed 8 blocks of flats from foundation to first floor at Ogombo and also a 2 unit Residential duplex of head room 3.9m at royal garden estate",
     rating: 5
   }
 ]
@@ -101,7 +106,7 @@ export function Reviews() {
             {reviews.map((review) => (
               <motion.div
                 key={review.id}
-                className="flex-none w-[350px] bg-white rounded-xl shadow-lg p-6"
+                className="flex-none w-[380px] bg-white rounded-xl shadow-lg p-6"
                 whileHover={{ y: -5 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
@@ -109,14 +114,16 @@ export function Reviews() {
                   <Image
                     src={review.image}
                     alt={review.name}
-                    width={48}
-                    height={48}
-                    className="rounded-full"
+                    width={60}
+                    height={60}
+                    className="rounded-full object-contain"
                   />
                   <div>
                     <h3 className="font-semibold">{review.name}</h3>
                     <p className="text-sm text-gray-600">
-                      {review.role} at {review.company}
+                      {review.role} at
+                      <br/>
+                     {review.company}
                     </p>
                   </div>
                 </div>

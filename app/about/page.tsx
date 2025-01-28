@@ -8,12 +8,15 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
+
+import groupimage from "../assets/groupimage.jpg"
+import omolola from "../assets/omolola.jpg"
 export default function About() {
   const team = [
     {
-      name: "Sarah Johnson",
+      name: "Engr. Omolola Adetona"
       role: "Executive Director",
-      image: "/placeholder.svg",
+      image: ",
       bio: "With over 15 years of experience in education and workforce development."
     },
     {
@@ -91,7 +94,7 @@ export default function About() {
             </div>
             <div className="relative h-[400px]">
               <Image
-                src="/placeholder.svg"
+                src=
                 alt="Training session"
                 fill
                 className="rounded-lg object-cover"
