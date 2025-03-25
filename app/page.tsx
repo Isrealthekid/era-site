@@ -80,7 +80,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
-              join Us
+              Join Us
             </button>
             <button className="border border-white hover:bg-white hover:text-gray-900 text-white px-6 py-2 rounded-md transition-colors duration-300">
               Become a Partner
