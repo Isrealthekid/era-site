@@ -22,13 +22,13 @@ export default function About() {
       name: "Engr. Omolola Adetona",
       role: "Executive Director",
       image: omolola,
-      bio: "With over 10 years of experience in engineering."
+      bio: ""
     },
     {
       name: "Taiwo Omotosho",
       role: "Training Director",
       image: placeholder,
-      bio: "Expert in curriculum development and professional training programs."
+      bio: ""
     },
     {
       name: "Seyi Adigun",
