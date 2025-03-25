@@ -76,11 +76,11 @@ export default function Home() {
             Great futures are built with proper guidance
           </h1>
           <p className="text-xl text-gray-200 mb-8">
-            The world's largest social fundraising platform dedicated to youth training and employment
+            An organisation aimed at providing a platform dedicated to Graduate training and employment opportunities
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
-              Start Learning
+              join Us
             </button>
             <button className="border border-white hover:bg-white hover:text-gray-900 text-white px-6 py-2 rounded-md transition-colors duration-300">
               Become a Partner
@@ -90,15 +90,15 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-6">
-            <div className="text-3xl font-bold text-green-400 mb-2">65%</div>
+            <div className="text-3xl font-bold text-green-400 mb-2">95%</div>
             <p className="text-gray-200">of our graduates find employment within 3 months</p>
           </div>
           <div className="bg-gray-900 bg-opacity-80 text-white rounded-2xl p-6">
-            <div className="text-3xl font-bold mb-2">2,500+</div>
-            <p>Students trained annually across multiple programs</p>
+            <div className="text-3xl font-bold mb-2">500+</div>
+            <p>Engineers and Graduates trained annually across multiple programs</p>
           </div>
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-6">
-            <div className="text-3xl font-bold text-green-400 mb-2">50+</div>
+            <div className="text-3xl font-bold text-green-400 mb-2">20+</div>
             <p className="text-gray-200">Partner companies offering internships</p>
           </div>
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-6">
@@ -219,13 +219,13 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-green-600 mb-2">
-                <CountUp end={14} suffix="+" />
+                <CountUp end={20} suffix="+" />
               </div>
               <div className="text-gray-600">Partner Companies</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-green-600 mb-2">
-                <CountUp end={85} suffix="%" />
+                <CountUp end={95} suffix="%" />
               </div>
               <div className="text-gray-600">Employment Rate</div>
             </div>

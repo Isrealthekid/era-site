@@ -7,8 +7,9 @@ import Layout from '@/components/layout'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ERA - Empowering Future Workforce',
-  description: 'ERA trains young graduates and connects them with leading companies for meaningful internships.',
+  title: 'ERA - Empowering Graduates and Engineers',
+  description: 'ERA bridges the gap between education and experience. ERA trains young graduates and connects them with leading companies for meaningful internships.',
+  icons: '/icon.svg'
 }
 
 export default function RootLayout({
@@ -18,6 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+       <head>
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+      </head>
       <body className={inter.className}>
         <Layout>{children}</Layout>
       </body>

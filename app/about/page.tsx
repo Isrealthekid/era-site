@@ -163,20 +163,20 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">5000+</div>
+              <div className="text-4xl font-bold mb-2">300+</div>
               <div>Graduates Trained</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">200+</div>
+              <div className="text-4xl font-bold mb-2">20+</div>
               <div>Partner Companies</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">85%</div>
+              <div className="text-4xl font-bold mb-2">95%</div>
               <div>Employment Rate</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">10+</div>
-              <div>Years Experience</div>
+              <div>Development Programs</div>
             </div>
           </div>
         </div>
