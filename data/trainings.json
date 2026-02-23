@@ -1,0 +1,45 @@
+[
+  {
+    "id": "1",
+    "title": "AutoCAD & Civil Engineering Drawing",
+    "slug": "autocad-civil-engineering-drawing",
+    "description": "Master 2D/3D drafting for civil and structural engineering projects.",
+    "fullDetails": "This training covers AutoCAD fundamentals, advanced drawing techniques, annotation, and export workflows used in real Nigerian construction firms. You will learn to create precise 2D drawings, develop 3D models, and produce professional documentation packages ready for construction sites. The course includes hands-on projects with real-world building plans and structural details.",
+    "price": 25000,
+    "currency": "NGN",
+    "duration": "4 Weeks",
+    "mode": "hybrid",
+    "flyerImage": "/uploads/trainings/autocad-flyer.jpg",
+    "startDate": "2025-06-01",
+    "seats": 30,
+    "instructor": "Engr. Seun Adeyemi",
+    "syllabus": [
+      "Week 1: Interface & Basic Commands",
+      "Week 2: 2D Drawing Techniques",
+      "Week 3: 3D Modelling & Rendering",
+      "Week 4: Project Documentation & Export"
+    ],
+    "published": true
+  },
+  {
+    "id": "2",
+    "title": "Project Management for Engineers",
+    "slug": "project-management-engineers",
+    "description": "Learn to manage timelines, budgets and teams on construction and engineering projects.",
+    "fullDetails": "This intensive program equips engineers with PMP-aligned project management tools and methodologies. You will master scheduling with Gantt charts, budget tracking, risk assessment, and stakeholder communication. The training includes case studies from Nigerian construction projects and hands-on exercises using industry-standard project management software.",
+    "price": 30000,
+    "currency": "NGN",
+    "duration": "3 Weeks",
+    "mode": "online",
+    "flyerImage": "/uploads/trainings/pm-flyer.jpg",
+    "startDate": "2025-06-15",
+    "seats": 50,
+    "instructor": "Engr. Amaka Obi",
+    "syllabus": [
+      "Week 1: Project Planning & Scheduling",
+      "Week 2: Execution & Monitoring",
+      "Week 3: Closeout & Reporting"
+    ],
+    "published": true
+  }
+]
