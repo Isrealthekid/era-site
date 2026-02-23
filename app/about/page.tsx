@@ -99,8 +99,8 @@ export default function About() {
                 Through our comprehensive training programs and partnerships with leading companies, 
                 we help graduates transition smoothly from academia to the professional world.
               </p>
-              <Button className="bg-green-600 hover:bg-green-700">
-                Learn More About Our Programs
+              <Button asChild className="bg-green-600 hover:bg-green-700 text-white">
+                <a href="/trainings">Learn More About Our Programs</a>
               </Button>
             </div>
             <div className="relative h-[400px]">
@@ -191,11 +191,11 @@ export default function About() {
             partnering with us, we'd love to hear from you.
           </p>
           <div className="space-x-4">
-            <Button className="bg-green-600 hover:bg-green-700">
-              Apply for Training
+            <Button asChild className="bg-green-600 hover:bg-green-700 text-white">
+              <a href="mailto:info@era.com.ng?subject=Join ERA Program">Apply for Training</a>
             </Button>
-            <Button variant="outline">
-              Partner With Us
+            <Button asChild variant="outline">
+              <a href="mailto:info@era.com.ng?subject=Partnership Inquiry">Partner With Us</a>
             </Button>
           </div>
         </div>

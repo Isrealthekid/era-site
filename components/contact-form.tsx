@@ -18,24 +18,18 @@ export function ContactForm() {
     const data = {
       name: formData.get('name') as string,
       email: formData.get('email') as string,
-      subject: formData.get('subject') as string,
+      phone: formData.get('phone') as string,
       message: formData.get('message') as string,
-      formType: 'contact',
     }
 
-    console.log('Submitting contact form:', data)
-
     try {
-      const response = await fetch('/api/submit-form', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       })
 
       const result = await response.json()
-      console.log('Contact form submission response:', result)
 
       if (response.ok && result.success) {
         toast.success("Your message has been sent successfully!", {
@@ -46,13 +40,12 @@ export function ContactForm() {
           pauseOnHover: true,
           draggable: true,
         })
-        event.currentTarget.reset()
+        ;(event.target as HTMLFormElement).reset()
       } else {
-        throw new Error(result.error || 'Failed to submit form')
+        throw new Error(result.error || 'Failed to submit')
       }
-    } catch (error) {
-      console.error('Error submitting form:', error)
-      toast.error("There was a problem submitting your form. Please try again.", {
+    } catch {
+      toast.error("There was a problem sending your message. Please email us directly at info@era.com.ng", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -69,21 +62,28 @@ export function ContactForm() {
     <>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-4">
-          <Input name="name" placeholder="First Name" required aria-label="First Name" />
+          <Input name="name" placeholder="Full Name" required aria-label="Full Name" />
           <Input name="email" type="email" placeholder="Email Address" required aria-label="Email Address" />
         </div>
-        <Input name="subject" placeholder="Subject" required aria-label="Subject" />
+        <Input name="phone" type="tel" placeholder="Phone Number" aria-label="Phone Number" />
         <Textarea name="message" placeholder="Your Message" className="h-32" required aria-label="Your Message" />
-        <Button 
-          type="submit" 
-          className="w-full md:w-auto bg-green-600 hover:bg-green-700"
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? 'Sending...' : 'Send Message'}
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <Button
+            type="submit"
+            className="bg-green-600 hover:bg-green-700 text-white"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Sending...' : 'Send Message'}
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+          >
+            <a href="mailto:info@era.com.ng">Email Us Directly</a>
+          </Button>
+        </div>
       </form>
       <ToastContainer />
     </>
   )
 }
-

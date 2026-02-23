@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "slug": "how-to-land-your-first-engineering-job",
+    "title": "How to Land Your First Engineering Job in Nigeria",
+    "excerpt": "Practical steps every fresh graduate should take to stand out in a competitive market.",
+    "content": "## Getting Started\n\nLanding your first engineering job in Nigeria can feel overwhelming, but with the right strategy, you can stand out from the competition.\n\n### Build a Strong Portfolio\n\nEmployers want to see what you can do. Start by documenting every project you worked on during school, SIWES, or personal initiatives. Include photos, drawings, calculations, and outcomes.\n\n### Network Actively\n\nAttend industry events, join professional bodies like NSE (Nigerian Society of Engineers), and connect with practicing engineers on LinkedIn. Many jobs in Nigeria are filled through referrals.\n\n### Develop Practical Skills\n\nComplement your degree with practical skills like AutoCAD, project management software, and site supervision experience. Programs like ERA's training and internship placement can bridge this gap.\n\n### Tailor Your Applications\n\nDon't send the same CV to every company. Research each firm and customize your application to highlight relevant experience and skills.\n\n### Stay Persistent\n\nThe job market can be tough, but persistence pays off. Keep learning, keep networking, and keep applying. Your breakthrough is closer than you think.",
+    "author": "ERA Editorial Team",
+    "date": "2025-03-10",
+    "category": "Career",
+    "coverImage": "/uploads/blogs/blog1.jpg",
+    "tags": ["career", "engineering", "graduates"]
+  },
+  {
+    "id": "2",
+    "slug": "soft-skills-every-engineer-needs",
+    "title": "Soft Skills Every Engineer Needs in 2025",
+    "excerpt": "Technical skills get you in the door -- soft skills keep you there.",
+    "content": "## Beyond Technical Knowledge\n\nIn today's engineering landscape, technical expertise alone isn't enough. Employers increasingly value engineers who can communicate, lead, and collaborate effectively.\n\n### Communication\n\nWhether you're writing reports, presenting to clients, or explaining technical concepts to non-technical stakeholders, clear communication is essential. Practice writing concise emails and giving presentations.\n\n### Teamwork\n\nEngineering projects involve multiple disciplines and stakeholders. Learning to work effectively in teams, resolve conflicts, and contribute to group goals is critical.\n\n### Problem-Solving\n\nGo beyond textbook solutions. Develop the ability to think critically, analyze complex situations, and propose creative solutions under pressure.\n\n### Time Management\n\nEngineering projects have tight deadlines. Master the art of prioritizing tasks, managing your schedule, and delivering quality work on time.\n\n### Adaptability\n\nTechnology and methodologies evolve rapidly. Stay curious, embrace change, and continuously update your skills to remain relevant in the industry.",
+    "author": "ERA Editorial Team",
+    "date": "2025-04-18",
+    "category": "Skills",
+    "coverImage": "/uploads/blogs/blog2.jpg",
+    "tags": ["soft skills", "communication", "workplace"]
+  }
+]
